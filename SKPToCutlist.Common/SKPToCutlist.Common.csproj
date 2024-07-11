@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="..\API\SketchUpAPI.dll" Link="SketchUpAPI.dll">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="..\API\SketchUpCommonPreferences.dll" Link="SketchUpCommonPreferences.dll">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\API\sketchup.lib" Link="sketchup.lib" />
+		<None Include="..\API\SketchUpAPI.lib" Link="SketchUpAPI.lib">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Reference Include="SketchUpNET">
+			<HintPath>..\SketchupNetBuild\SketchUpNET.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>
