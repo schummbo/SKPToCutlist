@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SKPToCutlist": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\kschu\\Downloads\\Homemade Lack.skp\""
+    }
+  }
+}
